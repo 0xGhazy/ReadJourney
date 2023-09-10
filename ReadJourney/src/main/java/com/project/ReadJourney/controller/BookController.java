@@ -3,6 +3,7 @@ package com.project.ReadJourney.controller;
 import com.project.ReadJourney.dto.BookDto;
 import com.project.ReadJourney.service.BookService;
 import com.project.ReadJourney.utils.Response;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -16,7 +17,7 @@ public class BookController {
 	private BookService service;
 
 	@PostMapping("")
-	public ResponseEntity<?> insertBook(@RequestBody BookDto bookDto) {
+	public ResponseEntity<?> insertBook(@Valid @RequestBody BookDto bookDto) {
 		Response response = service.insertBook(bookDto);
 		return new ResponseEntity<>(response.jsonfy(), response.getStatusCode());
 	}

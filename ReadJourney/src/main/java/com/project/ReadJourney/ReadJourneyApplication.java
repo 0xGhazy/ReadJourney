@@ -9,9 +9,19 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
-@OpenAPIDefinition(info = @Info(title = "ReadJourney API", version = "1.0.0", contact = @Contact(name = "Hossam Hamdy", email = "hhamdypro@gmail.com")))
-public class ReadJourneyApplication {
+@OpenAPIDefinition(
+		info = @Info(
+			title = "ReadJourney API",
+			version = "1.0.0",
+			contact = @Contact(
+					name = "Hossam Hamdy",
+					email = "hhamdypro@gmail.com"
+			)
+		)
+)
 
+
+public class ReadJourneyApplication {
 
 	@Bean
 	public ModelMapper modelMapper(){
