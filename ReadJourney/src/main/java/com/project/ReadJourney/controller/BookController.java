@@ -32,7 +32,7 @@ public class BookController {
 	@GetMapping("")
 	public ResponseEntity<?> retrieveAllBooks (
 			@RequestParam(value = "pageNo", defaultValue = "0", required = false) int pageNo,
-			@RequestParam(value = "pageSize", defaultValue = "0", required = false) int pageSize,
+			@RequestParam(value = "pageSize", defaultValue = "1", required = false) int pageSize,
 			@RequestParam(value = "sortBy", defaultValue = "id", required = false) String sortBy,
 			@RequestParam(value = "order", defaultValue = "asc", required = false) String order
 	){

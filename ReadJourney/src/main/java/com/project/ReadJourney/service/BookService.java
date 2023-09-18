@@ -52,7 +52,6 @@ public class BookService {
 
     private BookDto mapToDto(Book book){
         BookDto bookDto = modelMapper.map(book, BookDto.class);
-        System.out.println(book.toString());
         return bookDto;
     }
 

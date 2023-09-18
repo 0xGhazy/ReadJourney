@@ -5,7 +5,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.Date;
 
 @Data
 @AllArgsConstructor
@@ -19,7 +18,7 @@ public class Author {
     private long id;
     private String firstName;
     private String lastName;
-    private Date birthDate;
+    private String dob;
     private String biography;
 
     @Override
@@ -28,7 +27,7 @@ public class Author {
                 "id=" + id +
                 ", firstName= '" + firstName + '\'' +
                 ", lastName= '" + lastName + '\'' +
-                ", birthDate= " + birthDate +
+                ", birthDate= " + dob +
                 ", biography= '" + biography + '\'' +
                 '}';
     }
