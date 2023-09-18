@@ -29,5 +29,6 @@ replay_pid*
 *.mvn
 target
 
+.vscode
 
 
